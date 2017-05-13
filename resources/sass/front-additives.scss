@@ -1,0 +1,173 @@
+$assetsDir: "../";
+$juiDir: "#{$assetsDir}libs/jquery-ui/";
+
+@import "basement";
+@import "yt-accordion";
+
+.hidden {
+  display: none !important;
+}
+
+.help-block {
+  font-size: 0.8em;
+  padding: 5px 0;
+  float: left;
+}
+
+.form-group.has-error .help-block {
+  color: #e70000;
+}
+
+.form-buttonset .ui-checkboxradio-icon {
+  display: none;
+}
+
+.ui-datepicker-title select {
+  display: inline-block;
+  padding: 0 !important;
+  font-size: 0.8em !important;
+}
+
+.slider-container .min-label,
+.slider-container .max-label {
+  font-size: 12px;
+}
+
+.score-box {
+  float: right;
+  padding: 0 50px;
+}
+
+.score-box-inner {
+  background-color: #ffffff;
+  float: right;
+  width: 100%;
+  height: 130px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 12px;
+}
+
+.score-box .score-box-icon {
+  width: 30%;
+  float: right;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.score-box .score-box-title,
+.score-box .score-box-score {
+  width: 70%;
+  float: left;
+  padding: 15px 5px 0;
+}
+
+.score-box .score-box-score {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.score-box.red .score-box-inner {
+  color: #e75668;
+  border-color: #e75668;
+}
+
+.score-box.green .score-box-inner {
+  color: #7a9212;
+  border-color: #7a9212;
+}
+
+.score-box.blue .score-box-inner {
+  color: #034ea2;
+  border-color: #034ea2;
+}
+
+.score-box.gray .score-box-inner {
+  color: #a0a0a0;
+  border-color: #a0a0a0;
+}
+
+.score-box.dark .score-box-inner {
+  color: #7089a5;
+  border-color: #7089a5;
+}
+
+.loading {
+  opacity: 0.2;
+  cursor: wait;
+}
+
+.button-link {
+  font-size: 12px;
+}
+
+.fa {
+  font-family: FontAwesome !important;
+}
+
+.shop-icon {
+  background: url("#{$assetsDir}/images/shop-icons.png") no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("#{$assetsDir}/images/shop-icons.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  display: inline-block;
+  position: relative;
+}
+
+@for $i from 5 to 29 {
+  .f#{$i} {
+    font-size: 1px * $i;
+    @if ($i<10) {
+      font-weight: 100;
+    }
+  }
+}
+
+/********************* dialog *********************/
+
+.has-dialog {
+  position: relative !important;
+  min-height: 300px !important;
+}
+
+.yt-dialog {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8);
+}
+
+.yt-dialog-body {
+  background-color: #fff;
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  margin: 10% auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.yt-dialog-image {
+  padding: 15px 0;
+}
+
+.yt-dialog-text {
+  font-size: 14px;
+  padding: 10px 0;
+}

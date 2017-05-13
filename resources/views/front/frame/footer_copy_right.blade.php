@@ -1,0 +1,1 @@
+<div class="copyright"> تمام حقوق برای {{ setting()->ask('site_title')->gain() }} محفوظ است. </div>
